@@ -57,5 +57,7 @@ Key parameters (modifiable at the top of the script):
 
 For the complex Fourier coefficients calculation:
 ```bash
-octave TP1_1.m
-
+octave NYTUN_TRONES_Gpe_C_TP1_1.m
+```
+```bash
+octave NYTUN_TRONES_Gpe_C_TP1_2.m
