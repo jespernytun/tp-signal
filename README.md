@@ -49,15 +49,59 @@ Key parameters (modifiable at the top of the script):
 
 ---
 
+
+### TP2 – Signal convolution, correlation, and noise analysis
+
+#### `TP2_convolution.m` (or similar) – Convolution of two signals
+- Defines two input signals (often rectangular or piecewise).
+- Computes their convolution using `conv` scaled by the time step `dt`.
+- Plots both input signals and their convolution.
+
+**Purpose:**  
+Demonstrates how a system’s impulse response and an input signal combine over time.
+
+---
+
+#### `TP2_correlation.m` (or similar) – Cross-correlation of two signals
+- Computes the cross-correlation between two signals using `xcorr`.
+- Plots:
+  - The original signals.
+  - The correlation result, showing where they best align.
+
+**Purpose:**  
+Used to detect time shifts and similarity between signals.
+
+---
+
+#### `TP2_autocorrelation.m` (or similar) – Autocorrelation and noise energy estimation
+- Reads real signals from `.wav` files (e.g., `signal_inconnu.wav`, `sequence1.wav`, `sequence2.wav`, `sequence3.wav`).
+- Calculates:
+  - Total energy.
+  - Estimated noise energy by averaging correlation values in a low-correlation region.
+  - Signal energy by subtracting noise contribution.
+- Performs cross-correlation to identify which reference sequence best matches the noisy signal, and determines the time offset.
+- Plots:
+  - The noisy signal.
+  - Its autocorrelation and/or cross-correlation results.
+
+**Purpose:**  
+Illustrates how autocorrelation helps separate noise from structured signals and how cross-correlation can be used for pattern detection.
+
+---
+
 ## Usage
 
 1. Make sure you have either MATLAB or GNU Octave installed.
 
 2. Run the desired script from the terminal or MATLAB/Octave console:
 
-For the complex Fourier coefficients calculation:
 ```bash
-octave NYTUN_TRONES_Gpe_C_TP1_1.m
+octave filename.m
 ```
-```bash
-octave NYTUN_TRONES_Gpe_C_TP1_2.m
+
+## Authors
+Jesper NYTUN
+Peder TRONES
+
+These scripts were developed as a part of coursework at INSA Toulouse
+
