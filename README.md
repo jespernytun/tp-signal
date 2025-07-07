@@ -4,7 +4,11 @@ This repository contains two small projects developed for coursework in signal p
 All scripts were written in MATLAB / GNU Octave and are fully reproducible.
 
 ---
+## Authors
+Jesper NYTUN
+Peder TRONES
 
+These scripts were developed as a part of coursework at INSA Toulouse
 ## Overview
 
 ### Project 1: Fourier Coefficients Calculation (`TP1_1.m`)
@@ -98,10 +102,4 @@ Illustrates how autocorrelation helps separate noise from structured signals and
 ```bash
 octave filename.m
 ```
-
-## Authors
-Jesper NYTUN
-Peder TRONES
-
-These scripts were developed as a part of coursework at INSA Toulouse
 
