@@ -5,7 +5,7 @@ All scripts were written in MATLAB / GNU Octave and are fully reproducible.
 
 ---
 ## Authors
-Jesper NYTUN \br
+Jesper NYTUN <br>
 Peder TRONES
 
 These scripts were developed as a part of coursework at INSA Toulouse
